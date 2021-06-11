@@ -7,7 +7,7 @@
         <h1>This is the web page!!!</h1>
         <div id="debug"></div>
         <script>
-            fetch("sample-file.json")
+            fetch("https://mypublic-ashwani.s3.amazonaws.com/sample-file.json")
             .then(resonse => resonse.json())
             .then(data => {
                 console.log(data.sentence)
