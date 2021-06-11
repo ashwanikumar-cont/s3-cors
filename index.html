@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Sample test page</title>
+    </head>
+    <body>
+        <h1>This is the web page!!!</h1>
+        <div id="debug"></div>
+        <script>
+            fetch("sample-file.json")
+            .then(resonse => resonse.json())
+            .then(data => {
+                console.log(data.sentence)
+                document.querySelector("#debug").innerText = data.sentence
+            })
+        </script>
+    </body>
+</html>
